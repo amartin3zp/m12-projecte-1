@@ -21,6 +21,7 @@
 			<th>CREATED</th>
 			<th>UPDATES</th>
 			<th>Observar</th>
+			<th>Modificar</th>
 		</tr>
 
 		{% for item in items %}
@@ -33,6 +34,7 @@
 				<td>{{ item['created'] }}</a></td>
 				<td>{{ item['updated'] }}</a></td>
 				<td><a href="/products/read/{{ item['id'] }}">🔎</a></td>
+				<td><a href="/products/update/{{ item['id'] }}">ale</a></td>
 			</tr>
 		{% endfor %}
 	</table>
