@@ -1,0 +1,43 @@
+body {
+    background-color: darkgray;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 1vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 0.5vh solid purple;
+    height: 40vh;
+    width: 40vh;
+    padding: 3vh;
+}
+label{
+    font-size: 3vh;
+    font-weight: bold;
+}
+input{
+    height: 3vh;
+    width: 40vh;
+    margin-bottom: 2vh;
+    border: solid purple;
+    border-radius: 1vh;
+}
+.bordes{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid pink;
+    padding: 0.5vh;
+    background-color: purple;
+    width: 40vh;
+    height: 9vh;
+}

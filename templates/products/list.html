@@ -18,10 +18,9 @@
 			<th>DESCRIPTION</th>
             <th>PHOTO</th>
 			<th>PRICE</th>
-			<th>CATEGORY_ID</th>
-            <th>SELLER_ID</th>
 			<th>CREATED</th>
 			<th>UPDATES</th>
+			<th>Observar</th>
 		</tr>
 
 		{% for item in items %}
@@ -31,10 +30,9 @@
 				<td>{{ item['description'] }}</a></td>
                 <td>{{ item['photo'] }}</a></td>
 				<td>{{ item['price'] }}</a></td>
-				<td>{{ item['category_id'] }}</a></td>
-                <td>{{ item['seller_id'] }}</a></td>
 				<td>{{ item['created'] }}</a></td>
 				<td>{{ item['updated'] }}</a></td>
+				<td><a href="/products/read/{{ item['id'] }}">🔎</a></td>
 			</tr>
 		{% endfor %}
 	</table>
