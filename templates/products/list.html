@@ -22,22 +22,25 @@
 			<th>UPDATES</th>
 			<th>Observar</th>
 			<th>Modificar</th>
+			<th>Borrar</th>
 		</tr>
 
 		{% for item in items %}
 			<tr>
-				<td>{{ item['id'] }}</a></td>
-				<td>{{ item['title'] }}</a></td>
-				<td>{{ item['description'] }}</a></td>
-                <td>{{ item['photo'] }}</a></td>
-				<td>{{ item['price'] }}</a></td>
-				<td>{{ item['created'] }}</a></td>
-				<td>{{ item['updated'] }}</a></td>
+				<td>{{ item.id }}</a></td>
+				<td>{{ item.title }}</a></td>
+				<td>{{ item.description }}</a></td>
+                <td>{{ item.photo }}</a></td>
+				<td>{{ item.price }}</a></td>
+				<td>{{ item.created }}</a></td>
+				<td>{{ item.updated }}</a></td>
 				<td><a href="/products/read/{{ item['id'] }}">🔎</a></td>
-				<td><a href="/products/update/{{ item['id'] }}">ale</a></td>
+				<td><a href="/products/update/{{ item['id'] }}">📝</a></td>
+				<td><a href="/products/delete/{{ item['id'] }}">X</a></td>
 			</tr>
 		{% endfor %}
 	</table>
 </body>
 
 </html>
+<!-- .strftime("%Y-%m-%d %H:%M:%S") esta linia le daria formato a los datatimes pero al tener mal la base de datos peta, ejemplo de como seria: item.updated.strftime("%Y-%m-%d %H:%M:%S") -->
